@@ -20,10 +20,13 @@
   --font-heading: var(--font-druk-wide);
 }
 
+html,
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-poppins), system-ui, sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .font-heading {
@@ -34,25 +37,39 @@ body {
   --x: 50%;
   --y: 50%;
   position: relative;
+  height: 44px !important;
+  width: 200px !important;
   overflow: hidden;
-  transition: opacity 0.2s ease;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  isolation: isolate;
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  text-align: center;
 }
 
 .shimmer-btn::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    120px circle at var(--x) var(--y),
-    rgba(255, 255, 255, 0.12),
-    transparent 70%
-  );
+  background: radial-gradient(circle at var(--x) var(--y),
+      rgba(255, 255, 255, 0.15) 0%,
+      transparent 50%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
   pointer-events: none;
+  z-index: 1;
+}
+
+.shimmer-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
 }
 
 .shimmer-btn:hover::before {
   opacity: 1;
 }
 
+.shimmer-btn:active {
+  transform: translateY(0px) scale(0.98);
+}

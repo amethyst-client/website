@@ -5,13 +5,13 @@ import StaggeredMenu from "./StaggeredMenu";
 const menuItems = [
     { label: "Home", ariaLabel: "Go to home page", link: "#" },
     { label: "Features", ariaLabel: "View features", link: "#features" },
-    { label: "Contact", ariaLabel: "Contact US", link: "#contact" },
+    { label: "Performance", ariaLabel: "Performance stats", link: "#performance" },
     { label: "Download", ariaLabel: "Download Amethyst", link: "#download" },
 ];
 
 const socialItems = [
-    { label: "GitHub", link: "https://github.com/amethyst-client" },
-    { label: "Discord", link: "https://discord.com" },
+    { label: "Discord", link: "https://discord.gg/amethyst" },
+    { label: "Twitter", link: "https://twitter.com/amethyst" },
 ];
 
 export default function Header() {

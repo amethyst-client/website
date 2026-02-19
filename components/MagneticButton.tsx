@@ -7,7 +7,7 @@ interface MagneticButtonProps {
     children: React.ReactNode;
     className?: string;
     onClick?: () => void;
-    strength?: number; // How strong the magnetic pull is (default 30)
+    strength?: number;
 }
 
 export default function MagneticButton({

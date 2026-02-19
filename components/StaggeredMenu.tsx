@@ -32,8 +32,16 @@ export interface StaggeredMenuProps {
 export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
   position = 'right',
   colors = ['#B19EEF', '#5227FF'],
-  items = [],
-  socialItems = [],
+  items = [
+    { label: 'Home', ariaLabel: 'Go to home', link: '#' },
+    { label: 'Features', ariaLabel: 'View features', link: '#features' },
+    { label: 'Performance', ariaLabel: 'Performance stats', link: '#performance' },
+    { label: 'Download', ariaLabel: 'Download client', link: '#download' },
+  ],
+  socialItems = [
+    { label: 'Discord', link: 'https://discord.gg/amethyst' },
+    { label: 'Twitter', link: 'https://twitter.com/amethyst' },
+  ],
   displaySocials = true,
   displayItemNumbering = true,
   className,
@@ -255,7 +263,6 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
     spinTweenRef.current?.kill();
 
     if (opening) {
-      // ensure container never rotates
       gsap.set(icon, { rotate: 0, transformOrigin: '50% 50%' });
       spinTweenRef.current = gsap
         .timeline({ defaults: { ease: 'power4.out' } })
@@ -380,7 +387,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
   return (
     <div
-      className={`sm-scope z-40 ${isFixed ? 'fixed top-0 left-0 w-screen h-screen overflow-hidden' : 'w-full h-full'}`}
+      className={`sm-scope z-40 pointer-events-none ${isFixed ? 'fixed top-0 left-0 w-screen h-screen overflow-hidden' : 'w-full h-full'}`}
     >
       <div
         className={
@@ -568,11 +575,11 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 .sm-scope .sm-socials-link:hover { color: var(--sm-accent, #ff0000); }
 .sm-scope .sm-panel-title { margin: 0; font-size: 1rem; font-weight: 600; color: #fff; text-transform: uppercase; }
 .sm-scope .sm-panel-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
-.sm-scope .sm-panel-item { position: relative; color: #e9e7ff; font-weight: 600; font-size: 4rem; cursor: pointer; line-height: 1; letter-spacing: -2px; text-transform: uppercase; transition: background 0.25s, color 0.25s; display: inline-block; text-decoration: none; padding-right: 1.4em; }
-.sm-scope .sm-panel-itemLabel { display: inline-block; will-change: transform; transform-origin: 50% 100%; }
-.sm-scope .sm-panel-item:hover { color: var(--sm-accent, #ff0000); }
+.sm-scope .sm-panel-item { position: relative; color: #e9e7ff; font-weight: 600; font-family: var(--font-poppins), sans-serif; font-size: clamp(2rem, 6vw, 3.5rem); cursor: pointer; line-height: 1; letter-spacing: -0.02em; text-transform: uppercase; transition: color 0.3s ease, transform 0.3s ease; display: inline-flex; align-items: flex-start; text-decoration: none; padding-right: 1.8rem; }
+.sm-scope .sm-panel-itemLabel { display: inline-block; will-change: transform; transform-origin: left center; }
+.sm-scope .sm-panel-item:hover { color: var(--sm-accent, #ff0000); transform: translateX(8px); }
 .sm-scope .sm-panel-list[data-numbering] { counter-reset: smItem; }
-.sm-scope .sm-panel-list[data-numbering] .sm-panel-item::after { counter-increment: smItem; content: counter(smItem, decimal-leading-zero); position: absolute; top: 0.1em; right: 3.2em; font-size: 18px; font-weight: 400; color: var(--sm-accent, #ff0000); letter-spacing: 0; pointer-events: none; user-select: none; opacity: var(--sm-num-opacity, 0); }
+.sm-scope .sm-panel-list[data-numbering] .sm-panel-item::after { counter-increment: smItem; content: counter(smItem, decimal-leading-zero); position: absolute; top: 0; right: 0; font-size: 12px; font-weight: 600; font-family: var(--font-poppins), sans-serif; color: var(--sm-accent, #ff0000); letter-spacing: 0.05em; pointer-events: none; user-select: none; opacity: var(--sm-num-opacity, 0); }
 @media (max-width: 1024px) { .sm-scope .staggered-menu-panel { width: 100%; left: 0; right: 0; border-left: none; } .sm-scope .staggered-menu-wrapper[data-open] .sm-logo-img { filter: none; } }
 @media (max-width: 640px) { .sm-scope .staggered-menu-panel { width: 100%; left: 0; right: 0; border-left: none; } .sm-scope .staggered-menu-wrapper[data-open] .sm-logo-img { filter: none; } }
       `}</style>
