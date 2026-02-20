@@ -1,19 +1,18 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
+import Link from "next/link";
 
 interface ShimmerButtonProps {
     children: React.ReactNode;
     className?: string;
     onClick?: () => void;
+    href?: string;
 }
 
-export default function ShimmerButton({ children, className = "", onClick }: ShimmerButtonProps) {
-    const btnRef = useRef<HTMLButtonElement>(null);
-
-    const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
-        const btn = btnRef.current;
-        if (!btn) return;
+export default function ShimmerButton({ children, className = "", onClick, href }: ShimmerButtonProps) {
+    const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => {
+        const btn = e.currentTarget;
         const rect = btn.getBoundingClientRect();
         const x = ((e.clientX - rect.left) / rect.width) * 100;
         const y = ((e.clientY - rect.top) / rect.height) * 100;
@@ -21,9 +20,22 @@ export default function ShimmerButton({ children, className = "", onClick }: Shi
         btn.style.setProperty("--y", `${y}%`);
     };
 
+    if (href) {
+        return (
+            <Link
+                href={href}
+                onClick={onClick}
+                onMouseMove={handleMouseMove}
+                className={`shimmer-btn ${className}`}
+            >
+                {children}
+            </Link>
+        );
+    }
+
     return (
         <button
-            ref={btnRef}
+            type="button"
             onClick={onClick}
             onMouseMove={handleMouseMove}
             className={`shimmer-btn ${className}`}

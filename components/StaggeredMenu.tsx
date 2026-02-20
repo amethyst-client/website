@@ -33,14 +33,14 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
   position = 'right',
   colors = ['#B19EEF', '#5227FF'],
   items = [
-    { label: 'Home', ariaLabel: 'Go to home', link: '#' },
+    { label: 'Home', ariaLabel: 'Go to home', link: '/' },
     { label: 'Features', ariaLabel: 'View features', link: '#features' },
     { label: 'Performance', ariaLabel: 'Performance stats', link: '#performance' },
-    { label: 'Download', ariaLabel: 'Download client', link: '#download' },
+    { label: 'Download', ariaLabel: 'Download client', link: '/download' },
   ],
   socialItems = [
-    { label: 'Discord', link: 'https://discord.gg/amethyst' },
-    { label: 'Twitter', link: 'https://twitter.com/amethyst' },
+    { label: 'Discord', link: 'https://discord.gg/WAFac8MxMx' },
+    { label: 'GitHub', link: 'https://github.com/amethyst-client' },
   ],
   displaySocials = true,
   displayItemNumbering = true,
@@ -385,6 +385,20 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
     };
   }, [closeOnClickAway, open, closeMenu]);
 
+  const handleNavClick = useCallback(
+    (event: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+      if (!link.startsWith('#')) return;
+
+      event.preventDefault();
+      const target = document.querySelector(link);
+      if (target) {
+        closeMenu();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    },
+    [closeMenu]
+  );
+
   return (
     <div
       className={`sm-scope z-40 pointer-events-none ${isFixed ? 'fixed top-0 left-0 w-screen h-screen overflow-hidden' : 'w-full h-full'}`}
@@ -495,6 +509,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                       className="sm-panel-item relative text-black font-semibold text-[4rem] cursor-pointer leading-none tracking-[-2px] uppercase transition-[background,color] duration-150 ease-linear inline-block no-underline pr-[1.4em]"
                       href={it.link}
                       aria-label={it.ariaLabel}
+                      onClick={(event) => handleNavClick(event, it.link)}
                       data-index={idx + 1}
                     >
                       <span className="sm-panel-itemLabel inline-block [transform-origin:50%_100%] will-change-transform">

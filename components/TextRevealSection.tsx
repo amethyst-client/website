@@ -57,6 +57,11 @@ export default function TextRevealSection() {
 
   return (
     <section ref={sectionRef} className="relative z-30 pb-32" id="performance">
+      <div
+        className="pointer-events-none absolute left-[36%] top-[8%] z-10 text-[clamp(4rem,15vw,10rem)] font-heading uppercase tracking-tighter text-white/7 select-none"
+      >
+        CLIENT
+      </div>
       <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-16">
         <div className="h-px w-full bg-white/5 mb-24" />
         <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-20 items-end">
@@ -66,12 +71,11 @@ export default function TextRevealSection() {
               className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.6rem,7vw,3.8rem)]"
               data-scale
             >
-              Smooth. Stable. Fast.
+              Smooth. Stable.
             </h2>
 
-            <p className="max-w-xl text-lg text-[#a78bfa]/80 leading-relaxed font-light">
-              Amethyst keeps things simple. Less junk running in the background,
-              lower input delay, and consistent frame times. Launch and play.
+            <p className="max-w-xl text-lg text-[#a29ada]/80 leading-relaxed font-light">
+              Amethyst keeps things simple. Less junk running in the background, and consistent frame times. Launch and play.
             </p>
           </div>
 
@@ -79,7 +83,6 @@ export default function TextRevealSection() {
 
             {[
               { label: "Frame pacing", value: "Consistent" },
-              { label: "Input latency", value: "Low" },
               { label: "Crashes", value: "Rare" }
             ].map((item) => (
               <div key={item.label} className="space-y-4" data-right-item>

@@ -60,15 +60,15 @@ export default function FeatureGrid() {
             </div>
 
             <h2 className="font-heading uppercase leading-[0.95] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,7vw,3.8rem)]">
-              Lightweight client.
+              Lightweight.
               <br />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-[#8b5cf6] to-[#c4b5fd]">
-                Better frames.
+                Fast.
               </span>
             </h2>
           </div>
 
-          <p className="flex-1 max-w-xl text-lg text-[#a78bfa]/80 leading-relaxed font-light">
+          <p className="flex-1 max-w-xl text-lg text-[#a29ada]/80 leading-relaxed font-light">
             Lower memory use. Stable frame times. No background junk eating performance.
           </p>
         </div>

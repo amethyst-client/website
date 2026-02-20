@@ -21,6 +21,7 @@ export default function HorizontalScroll() {
                             return Math.max(totalWidth - viewportWidth, 0);
                         };
 
+                        gsap.set(horizontalTrackRef.current, { x: 0 });
                         gsap.to(horizontalTrackRef.current, {
                             x: () => -getDistance(),
                             ease: "none",
@@ -33,12 +34,10 @@ export default function HorizontalScroll() {
                                 invalidateOnRefresh: true,
                             },
                         });
-                    }
+                    } return undefined;
                 },
             });
-        }, horizontalRef);
-
-        return () => ctx.revert();
+        }, horizontalRef); return () => ctx.revert();
     }, []);
 
     return (
@@ -51,7 +50,7 @@ export default function HorizontalScroll() {
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
                             Reliably Stable
                         </h2>
-                        <p className="max-w-md text-md text-[#a78bfa]/70 leading-relaxed font-light">
+                        <p className="max-w-md text-md text-[#a29ada]/70 leading-relaxed font-light">
                             We don't just increase frames; we make them stay steady. Play Minecraft without stutters or drops.
                         </p>
                     </div>
@@ -60,7 +59,7 @@ export default function HorizontalScroll() {
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#c4b5fd] text-[clamp(2.5rem,6vw,4rem)]">
                             Simple Controls
                         </h2>
-                        <p className="max-w-md text-md text-[#a78bfa]/70 leading-relaxed font-light">
+                        <p className="max-w-md text-md text-[#a29ada]/70 leading-relaxed font-light">
                             Change your settings easily with an interface that stays hidden until you actually need it.
                         </p>
                     </div>
@@ -69,7 +68,7 @@ export default function HorizontalScroll() {
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
                             Zero Tracking
                         </h2>
-                        <p className="max-w-md text-md text-[#a78bfa]/70 leading-relaxed font-light">
+                        <p className="max-w-md text-md text-[#a29ada]/70 leading-relaxed font-light">
                             We don't watch what you do. Amethyst is built to be private, with no background checks or forced updates.
                         </p>
                     </div>

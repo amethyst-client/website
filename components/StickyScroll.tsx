@@ -61,7 +61,7 @@ export default function StickyScroll() {
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
                             Stable Frames
                         </h2>
-                        <p className="max-w-md text-md text-[#a78bfa]/70 leading-relaxed font-light">
+                        <p className="max-w-md text-md text-[#a29ada]/90 leading-relaxed font-light">
                             We changed how the game renders to make sure your frames stay consistent. No more stuttering during fights.
                         </p>
                     </div>
@@ -74,7 +74,7 @@ export default function StickyScroll() {
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
                             Simple HUD
                         </h2>
-                        <p className="max-w-md text-md text-[#a78bfa]/70 leading-relaxed font-light">
+                        <p className="max-w-md text-md text-[#a29ada]/90 leading-relaxed font-light">
                             A clean HUD that only shows what you need to see. Use your full screen for the game, not for menus.
                         </p>
                     </div>
@@ -87,7 +87,7 @@ export default function StickyScroll() {
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
                             Weekly Fixes
                         </h2>
-                        <p className="max-w-md text-md text-[#a78bfa]/70 leading-relaxed font-light">
+                        <p className="max-w-md text-md text-[#a29ada]/90 leading-relaxed font-light">
                             Amethyst is always in dev. We release updates every week to add new features and fix any issues found by players.
                         </p>
                     </div>

@@ -54,10 +54,10 @@ export default function DownloadSection() {
                 </p>
 
                 <div className="mt-16 flex flex-wrap items-center justify-center gap-8">
-                    <ShimmerButton className="shimmer-btn bg-[#6d28d9] text-white px-12 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
+                    <ShimmerButton href="/download" className="shimmer-btn bg-[#6d28d9] text-white px-12 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
                         Download
                     </ShimmerButton>
-                    <ShimmerButton className="shimmer-btn bg-white/5 border border-white/10 text-[#e9e7ff] px-12 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
+                    <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn bg-white/5 border border-white/10 text-[#e9e7ff] px-12 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
                         Discord
                     </ShimmerButton>
                 </div>

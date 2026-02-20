@@ -4,7 +4,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import NoiseOverlay from "@/components/NoiseOverlay";
-import CustomCursor from "@/components/CustomCursor";
 
 const drukWide = localFont({
   src: "./fonts/drukwide.ttf",
@@ -32,7 +31,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${drukWide.variable} ${poppins.variable} antialiased selection:bg-[#8b5cf6] selection:text-white`}>
-        <CustomCursor />
         <NoiseOverlay />
         <SmoothScroll>
           {children}

@@ -100,26 +100,22 @@ export default function Hero() {
             <div ref={heroZoomRef} className="relative z-20 mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16 pt-20">
                 <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
                     <div className="space-y-12">
-                        <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.3em] text-[#a78bfa] font-medium">
-                            <span className="h-px w-10 bg-[#a78bfa]/40" />
-                            Better Frames.
-                        </div>
-
+                        <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.2em] text-[#a78bfa] font-medium"><span className="h-px w-10 bg-[#a78bfa]/40" />Better Frames.</div>
                         <div className="space-y-8">
                             <h1 className="font-heading uppercase leading-[0.85] tracking-tight text-[#e9e7ff] text-[clamp(3rem,8vw,3.6rem)]">
                                 MORE FRAMES.<br />
                                 <span className="text-transparent bg-clip-text bg-linear-to-r from-[#8b5cf6] to-[#c4b5fd]">LESS BLOAT.</span>
                             </h1>
-                            <p className="max-w-xl text-md sm:text-lg text-[#a78bfa]/80 leading-relaxed font-light">
+                            <p className="max-w-xl text-md sm:text-lg text-[#F4F6F8]/80 leading-relaxed font-light">
                                 Amethyst is a simple and fast client. We focus on making the game run better without adding extra things you don't need.
                             </p>
                         </div>
 
                         <div className="flex flex-wrap items-center gap-8 pt-6">
-                            <ShimmerButton className="shimmer-btn bg-[#6d28d9] text-white px-10 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
+                            <ShimmerButton href="/download" className="shimmer-btn bg-[#6d28d9] text-white px-10 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
                                 Download
                             </ShimmerButton>
-                            <ShimmerButton className="shimmer-btn bg-white/5 border border-white/10 text-white px-10 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
+                            <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn bg-white/5 border border-white/10 text-white px-10 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
                                 Discord
                             </ShimmerButton>
                         </div>
