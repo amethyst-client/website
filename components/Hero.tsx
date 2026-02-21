@@ -100,7 +100,7 @@ export default function Hero() {
             <div ref={heroZoomRef} className="relative z-20 mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16 pt-20">
                 <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
                     <div className="space-y-12">
-                        <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.2em] text-[#a78bfa] font-medium"><span className="h-px w-10 bg-[#a78bfa]/40" />Better Frames.</div>
+                        <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.2em] text-[#a78bfa] font-medium"><span className="h-px w-10 bg-[#a78bfa]/40" />Amethyst.</div>
                         <div className="space-y-8">
                             <h1 className="font-heading uppercase leading-[0.85] tracking-tight text-[#e9e7ff] text-[clamp(3rem,8vw,3.6rem)]">
                                 MORE FRAMES.<br />
