@@ -42,34 +42,34 @@ export default function HorizontalScroll() {
 
     return (
         <section ref={horizontalRef} className="relative bg-white/1 overflow-hidden">
-            <div className="pointer-events-none absolute left-1/2 top-0 h-px w-[70vw] -translate-x-1/2 bg-white/5" />
+            <div className="pointer-events-none absolute left-1/2 top-0 h-px w-[70vw] -translate-x-1/2 bg-[#8b5cf6]/30" />
             <div className="overflow-hidden">
-                <div ref={horizontalTrackRef} className="flex min-w-[200vw] items-center gap-32 px-12 py-32">
-                    <div className="min-w-[60vw] space-y-8">
-                        <p className="text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Efficiency</p>
+                <div ref={horizontalTrackRef} className="flex min-w-[200vw] items-center gap-12 px-8 py-24">
+                    <div className="brutal-shell min-w-[60vw] space-y-6 p-6 sm:p-8">
+                        <p className="brutal-chip inline-flex px-3 py-2 text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Efficiency</p>
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
                             Reliably Stable
                         </h2>
-                        <p className="max-w-md text-md text-[#a29ada]/70 leading-relaxed font-light">
-                            We don't just increase frames; we make them stay steady. Play Minecraft without stutters or drops.
+                        <p className="max-w-md text-sm text-[#a29ada]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
+                            We don&apos;t just increase frames; we make them stay steady. Play Minecraft without stutters or drops.
                         </p>
                     </div>
-                    <div className="min-w-[60vw] space-y-8">
-                        <p className="text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Design</p>
+                    <div className="brutal-shell min-w-[60vw] space-y-6 p-6 sm:p-8">
+                        <p className="brutal-chip inline-flex px-3 py-2 text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Design</p>
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#c4b5fd] text-[clamp(2.5rem,6vw,4rem)]">
                             Simple Controls
                         </h2>
-                        <p className="max-w-md text-md text-[#a29ada]/70 leading-relaxed font-light">
+                        <p className="max-w-md text-sm text-[#a29ada]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
                             Change your settings easily with an interface that stays hidden until you actually need it.
                         </p>
                     </div>
-                    <div className="min-w-[60vw] space-y-8">
-                        <p className="text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Privacy</p>
+                    <div className="brutal-shell min-w-[60vw] space-y-6 p-6 sm:p-8">
+                        <p className="brutal-chip inline-flex px-3 py-2 text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Privacy</p>
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
                             Zero Tracking
                         </h2>
-                        <p className="max-w-md text-md text-[#a29ada]/70 leading-relaxed font-light">
-                            We don't watch what you do. Amethyst is built to be private, with no background checks or forced updates.
+                        <p className="max-w-md text-sm text-[#a29ada]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
+                            We don&apos;t watch what you do. Amethyst is built to be private, with no background checks or forced updates.
                         </p>
                     </div>
                 </div>

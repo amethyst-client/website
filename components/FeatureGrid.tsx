@@ -52,9 +52,9 @@ export default function FeatureGrid() {
     <section ref={sectionRef} className="relative z-30 pt-24 pb-24" id="features">
       <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-16">
 
-        <div className="flex flex-col lg:flex-row gap-12 lg:items-end mb-16" data-left>
+        <div className="brutal-shell flex flex-col lg:flex-row gap-10 lg:items-end mb-12 p-6 sm:p-8" data-left>
           <div className="space-y-6 flex-1">
-            <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.3em] font-medium text-[#c4b5fd]">
+            <div className="brutal-chip inline-flex items-center gap-4 px-3 py-2 text-[10px] uppercase tracking-[0.3em] font-medium text-[#c4b5fd]">
               <span className="h-px w-10 bg-[#c4b5fd]/40" />
               Core
             </div>
@@ -62,18 +62,18 @@ export default function FeatureGrid() {
             <h2 className="font-heading uppercase leading-[0.95] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,7vw,3.8rem)]">
               Lightweight.
               <br />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#8b5cf6] to-[#c4b5fd]">
+              <span className="text-[#c4b5fd] border-b border-[#8b5cf6]/60">
                 Fast.
               </span>
             </h2>
           </div>
 
-          <p className="flex-1 max-w-xl text-lg text-[#a29ada]/80 leading-relaxed font-light">
+          <p className="flex-1 max-w-xl text-sm sm:text-base text-[#a29ada]/80 leading-relaxed font-light uppercase">
             Lower memory use. Stable frame times. No background junk eating performance.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
           {[
             { num: "01", title: "Rendering", desc: "Faster draw pipeline for smoother gameplay." },
             { num: "02", title: "Memory", desc: "Lower usage and fewer spikes." },
@@ -83,9 +83,9 @@ export default function FeatureGrid() {
             <div
               key={i}
               data-card
-              className="group relative p-10 rounded-md bg-white/2 border border-white/5 hover:border-[#8b5cf6]/30 hover:bg-white/4 transition-all duration-500 overflow-hidden"
+                className="brutal-card brutal-shadow-hover group relative p-6 transition-all duration-300 overflow-hidden"
             >
-              <span className="block font-heading text-4xl mb-10 opacity-20 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110 text-white">
+                <span className="block font-heading text-4xl mb-7 opacity-30 transition-all duration-300 group-hover:opacity-100 text-white">
                 {item.num}
               </span>
 
@@ -97,7 +97,7 @@ export default function FeatureGrid() {
                 {item.desc}
               </p>
 
-              <div className="absolute -bottom-10 -right-10 h-32 w-32 bg-[#8b5cf6]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute bottom-0 right-0 h-2 w-16 bg-[#8b5cf6]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
           ))}
         </div>

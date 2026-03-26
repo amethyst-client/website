@@ -20,7 +20,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Amethyst Client",
-  description: "A minimal, premium Minecraft client landing page.",
+  description: "An insanely fast and lightweight Minecraft client, for free.",
 };
 
 export default function RootLayout({

@@ -86,51 +86,51 @@ export default function Hero() {
 
             <div
                 ref={heroTextRef1}
-                className="pointer-events-none absolute left-[-2%] top-[10%] z-10 text-[clamp(4rem,15vw,10rem)] font-heading uppercase tracking-tighter text-white/5 select-none"
+                className="pointer-events-none absolute left-[-2%] top-[10%] z-10 text-[clamp(4rem,15vw,10rem)] font-heading uppercase tracking-tighter text-white/10 select-none"
             >
                 AMETHYST
             </div>
             <div
                 ref={heroTextRef2}
-                className="pointer-events-none absolute right-[-2%] bottom-[15%] z-10 text-[clamp(4rem,15vw,10rem)] font-heading uppercase tracking-tighter text-white/5 select-none"
+                className="pointer-events-none absolute right-[-2%] bottom-[15%] z-10 text-[clamp(4rem,15vw,10rem)] font-heading uppercase tracking-tighter text-white/10 select-none"
             >
                 CLIENT
             </div>
 
             <div ref={heroZoomRef} className="relative z-20 mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16 pt-20">
-                <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
+                <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center p-6 sm:p-8 lg:p-10">
                     <div className="space-y-12">
-                        <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.2em] text-[#a78bfa] font-medium"><span className="h-px w-10 bg-[#a78bfa]/40" />Amethyst.</div>
+                        <div className="brutal-chip inline-flex items-center gap-4 px-3 py-2 text-[10px] uppercase tracking-[0.2em] text-[#c4b5fd] font-medium"><span className="h-px w-10 bg-[#a78bfa]/70" />Amethyst.</div>
                         <div className="space-y-8">
-                            <h1 className="font-heading uppercase leading-[0.85] tracking-tight text-[#e9e7ff] text-[clamp(3rem,8vw,3.6rem)]">
+                            <h1 className="font-heading uppercase leading-[0.85] tracking-tight text-[#e9e7ff] text-[clamp(3rem,8vw,3.4rem)]">
                                 MORE FRAMES.<br />
-                                <span className="text-transparent bg-clip-text bg-linear-to-r from-[#8b5cf6] to-[#c4b5fd]">LESS BLOAT.</span>
+                                <span className="inline-block border-b border-[#8b5cf6]/60 text-[#c4b5fd]">LESS BLOAT.</span>
                             </h1>
-                            <p className="max-w-xl text-md sm:text-lg text-[#F4F6F8]/80 leading-relaxed font-light">
-                                Amethyst is a simple and fast client. We focus on making the game run better without adding extra things you don't need.
+                            <p className="max-w-xl text-sm sm:text-base text-[#F4F6F8]/80 leading-relaxed font-light uppercase">
+                                Amethyst is a simple and fast client. We focus on making the game run better without adding extra things you don&apos;t need.
                             </p>
                         </div>
 
-                        <div className="flex flex-wrap items-center gap-8 pt-6">
-                            <ShimmerButton href="/download" className="shimmer-btn bg-[#6d28d9] text-white px-10 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
+                        <div className="flex flex-wrap items-center gap-6 pt-4">
+                            <ShimmerButton href="/download" className="shimmer-btn brutal-shadow-hover bg-[#6d28d9] text-white px-10 py-4 text-sm font-bold tracking-widest uppercase">
                                 Download
                             </ShimmerButton>
-                            <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn bg-white/5 border border-white/10 text-white px-10 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
+                            <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn brutal-shadow-hover bg-white/5 border border-white/10 text-white px-10 py-4 text-sm font-bold tracking-widest uppercase">
                                 Discord
                             </ShimmerButton>
                         </div>
                     </div>
 
-                    <div className="hidden lg:grid grid-cols-1 gap-12 border-l border-white/10 pl-16">
+                    <div className="hidden lg:grid grid-cols-1 gap-6 border-l border-white/10 pl-10">
                         {[
                             { label: "Performance", value: "240+", sub: "avg FPS on test PC" },
-                            { label: "Stability", value: "SMOOTH", sub: "Consistent frames" },
+                            { label: "Stability", value: "SMOOTH", sub: "" },
                             { label: "Design", value: "CLEAN", sub: "Simple HUD" },
                         ].map((stat, i) => (
-                            <div key={i} className="group cursor-default">
+                            <div key={i} className="brutal-card brutal-shadow-hover group cursor-default p-5">
                                 <p className="text-[10px] uppercase tracking-[0.2em] text-[#a78bfa]/60 group-hover:text-[#a78bfa] transition-colors font-medium">{stat.label}</p>
                                 <div className="flex items-baseline gap-4 mt-2">
-                                    <h2 className="font-heading uppercase text-5xl text-[#e9e7ff] group-hover:translate-x-3 transition-transform duration-700 ease-expo">{stat.value}</h2>
+                                    <h2 className="font-heading uppercase text-5xl text-[#e9e7ff] group-hover:translate-x-1 transition-transform duration-300 ease-out">{stat.value}</h2>
                                     <span className="text-[10px] text-[#a78bfa]/40 group-hover:text-[#a78bfa]/60 transition-colors uppercase font-bold tracking-widest">{stat.sub}</span>
                                 </div>
                             </div>
@@ -139,9 +139,9 @@ export default function Hero() {
                 </div>
             </div>
 
-            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-6 opacity-40">
+            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-50">
                 <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-[#a78bfa]">Keep Scrolling</span>
-                <div className="w-px h-16 bg-linear-to-b from-[#a78bfa] to-transparent" />
+                <div className="w-px h-14 bg-linear-to-b from-[#a78bfa] to-transparent" />
             </div>
         </section>
     );

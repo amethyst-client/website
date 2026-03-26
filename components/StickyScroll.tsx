@@ -52,9 +52,9 @@ export default function StickyScroll() {
     return (
         <section ref={stickyRef} className="relative z-30" id="features">
             <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-16 pb-32 pt-20">
-                <div className="relative min-h-[80vh]">
-                    <div className="lg:absolute lg:left-0 lg:top-[25%] lg:max-w-xl space-y-6" data-scene>
-                        <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] font-medium text-[#8b5cf6]">
+                <div className="brutal-shell relative min-h-[80vh] p-6 sm:p-8 lg:p-10">
+                    <div className="lg:absolute lg:left-10 lg:top-[22%] lg:max-w-xl space-y-6" data-scene>
+                        <div className="brutal-chip inline-flex items-center gap-3 px-3 py-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#8b5cf6]">
                             <span className="h-px w-6 bg-[#8b5cf6]/40" />
                             01 — Performance
                         </div>
@@ -66,8 +66,8 @@ export default function StickyScroll() {
                         </p>
                     </div>
 
-                    <div className="lg:absolute lg:left-0 lg:top-[25%] lg:max-w-xl space-y-6" data-scene>
-                        <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] font-medium text-[#8b5cf6]">
+                    <div className="lg:absolute lg:left-10 lg:top-[22%] lg:max-w-xl space-y-6" data-scene>
+                        <div className="brutal-chip inline-flex items-center gap-3 px-3 py-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#8b5cf6]">
                             <span className="h-px w-6 bg-[#8b5cf6]/40" />
                             02 — Interface
                         </div>
@@ -79,8 +79,8 @@ export default function StickyScroll() {
                         </p>
                     </div>
 
-                    <div className="lg:absolute lg:left-0 lg:top-[25%] lg:max-w-xl space-y-6" data-scene>
-                        <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] font-medium text-[#8b5cf6]">
+                    <div className="lg:absolute lg:left-10 lg:top-[22%] lg:max-w-xl space-y-6" data-scene>
+                        <div className="brutal-chip inline-flex items-center gap-3 px-3 py-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#8b5cf6]">
                             <span className="h-px w-6 bg-[#8b5cf6]/40" />
                             03 — Updates
                         </div>
@@ -93,12 +93,12 @@ export default function StickyScroll() {
                     </div>
                 </div>
 
-                <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block overflow-hidden">
-                    <div className="flex flex-col gap-8 text-right opacity-10">
+                <div className="pointer-events-none absolute right-8 top-1/2 -translate-y-1/2 hidden lg:block overflow-hidden">
+                    <div className="flex flex-col gap-8 text-right opacity-15">
                         <div className="text-[10rem] font-heading uppercase leading-none tracking-tighter">
                             AMETHYST
                         </div>
-                        <div className="text-[10rem] font-heading uppercase leading-none tracking-tighter text-transparent border-t border-white/20 pt-8" style={{ WebkitTextStroke: "1px rgba(255,255,255,0.2)" }}>
+                        <div className="text-[10rem] font-heading uppercase leading-none tracking-tighter text-transparent border-t border-white/25 pt-8" style={{ WebkitTextStroke: "1px rgba(196,181,253,0.5)" }}>
                             CLIENT
                         </div>
                     </div>

@@ -58,13 +58,13 @@ export default function TextRevealSection() {
   return (
     <section ref={sectionRef} className="relative z-30 pb-32" id="performance">
       <div
-        className="pointer-events-none absolute left-[36%] top-[8%] z-10 text-[clamp(4rem,15vw,10rem)] font-heading uppercase tracking-tighter text-white/7 select-none"
+        className="pointer-events-none absolute left-[36%] top-[8%] z-10 text-[clamp(4rem,15vw,10rem)] font-heading uppercase tracking-tighter text-white/10 select-none"
       >
         CLIENT
       </div>
       <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-16">
-        <div className="h-px w-full bg-white/5 mb-24" />
-        <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-20 items-end">
+        <div className="brutal-divider mb-16" />
+        <div className="brutal-shell grid lg:grid-cols-[1.3fr_0.7fr] gap-14 items-end p-6 sm:p-8 lg:p-10">
 
           <div className="space-y-10" data-left>
             <h2
@@ -74,24 +74,24 @@ export default function TextRevealSection() {
               Smooth. Stable.
             </h2>
 
-            <p className="max-w-xl text-lg text-[#a29ada]/80 leading-relaxed font-light">
+            <p className="max-w-xl text-sm sm:text-base text-[#a29ada]/80 leading-relaxed font-light uppercase">
               Amethyst keeps things simple. Less junk running in the background, and consistent frame times. Launch and play.
             </p>
           </div>
 
-          <div className="space-y-8 pb-4">
+          <div className="space-y-6 pb-2">
 
             {[
               { label: "Frame pacing", value: "Consistent" },
               { label: "Crashes", value: "Rare" }
             ].map((item) => (
-              <div key={item.label} className="space-y-4" data-right-item>
+              <div key={item.label} className="brutal-card space-y-4 p-4" data-right-item>
                 <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.2em] text-[#c4b5fd] font-medium">
                   <span>{item.label}</span>
                   <span className="text-white/40">{item.value}</span>
                 </div>
 
-                <div className="h-px w-full bg-white/10 relative overflow-hidden">
+                <div className="h-px w-full bg-white/15 relative overflow-hidden">
                   <div
                     className="absolute inset-0 bg-[#8b5cf6] origin-left"
                     data-line-fill

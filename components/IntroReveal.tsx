@@ -68,15 +68,15 @@ export default function IntroReveal() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-[10000] pointer-events-none overflow-hidden">
+    <div className="fixed inset-0 z-10000 pointer-events-none overflow-hidden">
       <div className="absolute inset-0 flex">
-        <div ref={leftPanelRef} className="w-1/2 h-full bg-[#0b0613] border-r border-white/5" />
-        <div ref={rightPanelRef} className="w-1/2 h-full bg-[#0b0613] border-l border-white/5" />
+        <div ref={leftPanelRef} className="w-1/2 h-full bg-[#0b0613] border-r border-[#3e2a63]" />
+        <div ref={rightPanelRef} className="w-1/2 h-full bg-[#0b0613] border-l border-[#3e2a63]" />
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center">
-        <div ref={lineRef} className="absolute h-[250px] w-px bg-gradient-to-b from-transparent via-[#8b5cf6] to-transparent" />
-        <div ref={textRef} className="flex items-center justify-center">
+        <div ref={lineRef} className="absolute h-62.5 w-px bg-linear-to-b from-transparent via-[#8b5cf6] to-transparent" />
+        <div ref={textRef} className="flex items-center justify-center border border-[#3e2a63] bg-[#120a1f] px-6 py-4 shadow-[5px_5px_0_0_rgba(42,20,83,0.9)]">
           <h1 className="font-heading text-4xl md:text-6xl text-[#e9e7ff] uppercase tracking-[0.2em] text-center">
             AMETHYST
           </h1>

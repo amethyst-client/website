@@ -64,24 +64,24 @@ export default function DownloadPage() {
           </div>
 
           <div className="relative z-20 mx-auto w-full max-w-6xl px-6 sm:px-12 lg:px-16 pt-24 pb-16">
-            <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
-              <div className="space-y-10">
-                <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.2em] text-[#a78bfa] font-medium">
+            <div className="brutal-shell grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center p-6 sm:p-8 lg:p-10">
+              <div className="space-y-8">
+                <div className="brutal-chip inline-flex items-center gap-4 px-3 py-2 text-[10px] uppercase tracking-[0.2em] text-[#a78bfa] font-medium">
                   <span className="h-px w-10 bg-[#a78bfa]/40" />
                   Status
                 </div>
 
                 <div className="space-y-6">
                   <h1 className="font-heading uppercase leading-[0.85] tracking-tight text-[#e9e7ff] text-[clamp(3rem,7vw,4rem)]">
-                    <span className="text-transparent bg-clip-text bg-linear-to-r from-[#8b5cf6] to-[#c4b5fd]">No public build.</span>
+                    <span className="text-[#c4b5fd] border-b border-[#8b5cf6]/60">No public build.</span>
                   </h1>
-                  <p className="max-w-xl text-md sm:text-lg text-[#F4F6F8]/80 leading-relaxed font-light">
+                  <p className="max-w-xl text-sm sm:text-base text-[#F4F6F8]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
                     We are still building the client. If you want to follow along or request early access, Discord is where we post updates and testing applications.
                   </p>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-6">
-                  <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn bg-[#6d28d9] text-white px-10 py-4 rounded-md text-sm font-bold tracking-widest uppercase">
+                  <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn brutal-shadow-hover bg-[#6d28d9] text-white px-10 py-4 text-sm font-bold tracking-widest uppercase">
                     Join Discord
                   </ShimmerButton>
                 </div>
@@ -92,9 +92,9 @@ export default function DownloadPage() {
 
         <section className="relative z-30 py-20" id="download">
           <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-16">
-            <div className="flex flex-col lg:flex-row gap-12 lg:items-end mb-16">
+            <div className="brutal-shell flex flex-col lg:flex-row gap-10 lg:items-end mb-12 p-6 sm:p-8">
               <div className="space-y-6 flex-1">
-                <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.2em] font-medium text-[#c4b5fd]">
+                <div className="brutal-chip inline-flex items-center gap-4 px-3 py-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#c4b5fd]">
                   <span className="h-px w-10 bg-[#c4b5fd]/40" />
                   Platforms
                 </div>
@@ -104,16 +104,16 @@ export default function DownloadPage() {
                 </h2>
               </div>
 
-              <p className="flex-1 max-w-xl text-lg text-[#a29ada]/80 leading-relaxed font-light">
+              <p className="flex-1 max-w-xl text-sm sm:text-base text-[#a29ada]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
                 These are the platforms we are aiming for. Links will appear here when public testing opens.
               </p>
             </div>
 
-            <div className="grid gap-6 lg:grid-cols-3">
+            <div className="grid gap-5 lg:grid-cols-3">
               {platforms.map((card) => (
                 <div
                   key={card.title}
-                  className="group relative overflow-hidden rounded-md border border-white/10 bg-white/5 p-8 transition-all duration-500 hover:border-[#8b5cf6]/40 hover:bg-white/8"
+                  className="brutal-card brutal-shadow-hover group relative overflow-hidden p-6 transition-all duration-300"
                 >
                   <div className="flex items-center justify-between">
                     <h3 className="font-heading uppercase text-2xl">{card.title}</h3>
@@ -124,17 +124,17 @@ export default function DownloadPage() {
                   <ul className="mt-6 space-y-3 text-[11px] uppercase text-[#a29ada]/70">
                     {card.notes.map((item) => (
                       <li key={item} className="flex items-center gap-3">
-                        <span className="h-1 w-1 rounded-full bg-[#8b5cf6]" />
+                        <span className="h-1.5 w-1.5 bg-[#8b5cf6]" />
                         {item}
                       </li>
                     ))}
                   </ul>
                   <div className="mt-10">
-                    <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn bg-white/5 border border-white/10 text-white px-8 py-4 rounded-md text-xs font-bold tracking-widest uppercase w-full">
+                    <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn brutal-shadow-hover bg-white/5 border border-white/10 text-white px-8 py-4 text-xs font-bold tracking-widest uppercase w-full">
                       Get notified
                     </ShimmerButton>
                   </div>
-                  <div className="absolute -bottom-10 -right-10 h-32 w-32 bg-[#8b5cf6]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute bottom-0 right-0 h-2 w-16 bg-[#8b5cf6]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
               ))}
             </div>
@@ -143,9 +143,9 @@ export default function DownloadPage() {
 
         <section className="relative z-30 py-20 bg-white/2" id="expectations">
           <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-16">
-            <div className="flex flex-col lg:flex-row gap-12 lg:items-end mb-16">
+            <div className="brutal-shell flex flex-col lg:flex-row gap-10 lg:items-end mb-12 p-6 sm:p-8">
               <div className="space-y-6 flex-1">
-                <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.2em] font-medium text-[#c4b5fd]">
+                <div className="brutal-chip inline-flex items-center gap-4 px-3 py-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#c4b5fd]">
                   <span className="h-px w-10 bg-[#c4b5fd]/40" />
                   What to expect
                 </div>
@@ -155,16 +155,16 @@ export default function DownloadPage() {
                 </h2>
               </div>
 
-              <p className="flex-1 max-w-xl text-lg text-[#a29ada]/80 leading-relaxed font-light">
+              <p className="flex-1 max-w-xl text-sm sm:text-base text-[#a29ada]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
                 This page will only list real builds and real information and nothing else.
               </p>
             </div>
 
-            <div className="grid gap-6 lg:grid-cols-3">
+            <div className="grid gap-5 lg:grid-cols-3">
               {whatToExpect.map((item) => (
-                <div key={item.title} className="rounded-md border border-white/10 bg-white/5 p-8">
+                <div key={item.title} className="brutal-card p-6">
                   <h3 className="text-sm font-bold uppercase tracking-widest text-[#e9e7ff]">{item.title}</h3>
-                  <p className="mt-4 text-sm text-[#a29ada]/70 leading-relaxed">{item.desc}</p>
+                  <p className="mt-4 text-sm text-[#a29ada]/70 leading-relaxed uppercase tracking-[0.03em]">{item.desc}</p>
                 </div>
               ))}
             </div>
