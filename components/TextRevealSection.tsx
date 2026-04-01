@@ -56,11 +56,11 @@ export default function TextRevealSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative z-30 pb-32" id="performance">
+    <section ref={sectionRef} className="relative z-30 pb-32" id="process">
       <div
         className="pointer-events-none absolute left-[36%] top-[8%] z-10 text-[clamp(4rem,15vw,10rem)] font-heading uppercase tracking-tighter text-white/10 select-none"
       >
-        CLIENT
+        STUDIO
       </div>
       <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-16">
         <div className="brutal-divider mb-16" />
@@ -71,22 +71,22 @@ export default function TextRevealSection() {
               className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.6rem,7vw,3.8rem)]"
               data-scale
             >
-              Smooth. Stable.
+              Clear Process.
             </h2>
 
-            <p className="max-w-xl text-sm sm:text-base text-[#a29ada]/80 leading-relaxed font-light uppercase">
-              Amethyst keeps things simple. Less junk running in the background, and consistent frame times. Launch and play.
+            <p className="max-w-xl text-sm sm:text-base text-[#a29ada]/80 leading-relaxed font-light">
+              We start with a simple build, test it in real use, and iterate until it is ready to ship.
             </p>
           </div>
 
           <div className="space-y-6 pb-2">
 
             {[
-              { label: "Frame pacing", value: "Consistent" },
-              { label: "Crashes", value: "Rare" }
+              { label: "Build cadence", value: "Weekly" },
+              { label: "Release style", value: "Small updates" }
             ].map((item) => (
               <div key={item.label} className="brutal-card space-y-4 p-4" data-right-item>
-                <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.2em] text-[#c4b5fd] font-medium">
+                <div className="flex items-center justify-between text-[11px] uppercase tracking-widest text-[#c4b5fd] font-medium">
                   <span>{item.label}</span>
                   <span className="text-white/40">{item.value}</span>
                 </div>

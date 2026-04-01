@@ -56,29 +56,25 @@ export default function FeatureGrid() {
           <div className="space-y-6 flex-1">
             <div className="brutal-chip inline-flex items-center gap-4 px-3 py-2 text-[10px] uppercase tracking-[0.3em] font-medium text-[#c4b5fd]">
               <span className="h-px w-10 bg-[#c4b5fd]/40" />
-              Core
+              Process
             </div>
 
             <h2 className="font-heading uppercase leading-[0.95] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,7vw,3.8rem)]">
-              Lightweight.
-              <br />
-              <span className="text-[#c4b5fd] border-b border-[#8b5cf6]/60">
-                Fast.
-              </span>
+              Plan. <span className="text-[#c4b5fd] border-b border-[#8b5cf6]/60">Build. Release.</span>
             </h2>
           </div>
 
-          <p className="flex-1 max-w-xl text-sm sm:text-base text-[#a29ada]/80 leading-relaxed font-light uppercase">
-            Lower memory use. Stable frame times. No background junk eating performance.
+          <p className="flex-1 max-w-xl text-sm sm:text-base text-[#a29ada]/80 leading-relaxed font-light">
+            Our process stays simple. We validate ideas in real usage and release updates that add practical value.
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
           {[
-            { num: "01", title: "Rendering", desc: "Faster draw pipeline for smoother gameplay." },
-            { num: "02", title: "Memory", desc: "Lower usage and fewer spikes." },
-            { num: "03", title: "UI", desc: "Clean HUD. Nothing distracting." },
-            { num: "04", title: "Privacy", desc: "No tracking. No telemetry." }
+            { num: "01", title: "Plan", desc: "Define the core feature and keep the scope focused." },
+            { num: "02", title: "Test", desc: "Validate behavior in real sessions and server scenarios." },
+            { num: "03", title: "Optimize", desc: "Tighten performance and remove unnecessary complexity." },
+            { num: "04", title: "Release", desc: "Publish updates with clear notes and stable defaults." }
           ].map((item, i) => (
             <div
               key={i}

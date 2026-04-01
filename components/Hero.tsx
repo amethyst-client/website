@@ -94,26 +94,26 @@ export default function Hero() {
                 ref={heroTextRef2}
                 className="pointer-events-none absolute right-[-2%] bottom-[15%] z-10 text-[clamp(4rem,15vw,10rem)] font-heading uppercase tracking-tighter text-white/10 select-none"
             >
-                CLIENT
+                STUDIOS
             </div>
 
             <div ref={heroZoomRef} className="relative z-20 mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16 pt-20">
                 <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center p-6 sm:p-8 lg:p-10">
                     <div className="space-y-12">
-                        <div className="brutal-chip inline-flex items-center gap-4 px-3 py-2 text-[10px] uppercase tracking-[0.2em] text-[#c4b5fd] font-medium"><span className="h-px w-10 bg-[#a78bfa]/70" />Amethyst.</div>
+                        <div className="brutal-chip inline-flex items-center gap-4 px-3 py-2 text-[10px] uppercase tracking-[0.2em] text-[#c4b5fd] font-medium"><span className="h-px w-10 bg-[#a78bfa]/70" />Indie Studio</div>
                         <div className="space-y-8">
                             <h1 className="font-heading uppercase leading-[0.85] tracking-tight text-[#e9e7ff] text-[clamp(3rem,8vw,3.4rem)]">
-                                MORE FRAMES.<br />
-                                <span className="inline-block border-b border-[#8b5cf6]/60 text-[#c4b5fd]">LESS BLOAT.</span>
+                                Software.<br />
+                                <span className="inline-block border-b border-[#8b5cf6]/60 text-[#c4b5fd]">Built Properly.</span>
                             </h1>
-                            <p className="max-w-xl text-sm sm:text-base text-[#F4F6F8]/80 leading-relaxed font-light uppercase">
-                                Amethyst is a simple and fast client. We focus on making the game run better without adding extra things you don&apos;t need.
+                            <p className="max-w-xl text-sm sm:text-base text-[#F4F6F8]/80 leading-relaxed font-light">
+                                Amethyst Studios builds practical projects for Minecraft and server communities with a straightforward build and test process.
                             </p>
                         </div>
 
                         <div className="flex flex-wrap items-center gap-6 pt-4">
-                            <ShimmerButton href="/download" className="shimmer-btn brutal-shadow-hover bg-[#6d28d9] text-white px-10 py-4 text-sm font-bold tracking-widest uppercase">
-                                Download
+                            <ShimmerButton href="/collections" className="shimmer-btn brutal-shadow-hover bg-[#6d28d9] text-white px-10 py-4 text-sm font-bold tracking-widest uppercase">
+                                Collections
                             </ShimmerButton>
                             <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn brutal-shadow-hover bg-white/5 border border-white/10 text-white px-10 py-4 text-sm font-bold tracking-widest uppercase">
                                 Discord
@@ -123,9 +123,9 @@ export default function Hero() {
 
                     <div className="hidden lg:grid grid-cols-1 gap-6 border-l border-white/10 pl-10">
                         {[
-                            { label: "Performance", value: "240+", sub: "avg FPS on test PC" },
-                            { label: "Stability", value: "SMOOTH", sub: "" },
-                            { label: "Design", value: "CLEAN", sub: "Simple HUD" },
+                            { label: "Products", value: "02", sub: "active projects" },
+                            { label: "Workflow", value: "BUILD & TEST", sub: "small updates" },
+                            { label: "Focus", value: "PRAC", sub: "useful features" },
                         ].map((stat, i) => (
                             <div key={i} className="brutal-card brutal-shadow-hover group cursor-default p-5">
                                 <p className="text-[10px] uppercase tracking-[0.2em] text-[#a78bfa]/60 group-hover:text-[#a78bfa] transition-colors font-medium">{stat.label}</p>

@@ -1,37 +1,33 @@
 import Header from "@/components/Header";
 import LightRays from "@/components/LightRays";
 import ShimmerButton from "@/components/ShimmerButton";
+import SiteFooter from "@/components/SiteFooter";
 
-const platforms = [
+const products = [
   {
-    title: "Windows",
-    status: "Planned",
-    notes: ["Public build not ready", "Format to be announced", "Updates on Discord"],
+    title: "Amethyst Client",
+    status: "Preview",
+    notes: ["High performance lightweight Minecraft client", "Free on launch", "Public build not ready"],
   },
   {
-    title: "macOS",
-    status: "Planned",
-    notes: ["Public build not ready", "Apple Silicon + Intel", "Updates on Discord"],
-  },
-  {
-    title: "Linux",
-    status: "Planned",
-    notes: ["Public build not ready", "Format to be announced", "Updates on Discord"],
+    title: "Amethyst Purge",
+    status: "In testing",
+    notes: ["PaperMC plugin with a 7 day purge event", "Teams, custom structures, and special weapons", "Release timing shared in Discord"],
   },
 ];
 
 const whatToExpect = [
   {
-    title: "Small batches",
-    desc: "We will open testing in waves so we can respond quickly.",
+    title: "Real milestones",
+    desc: "We only post updates when something was built, tested, or shipped.",
   },
   {
-    title: "Clear updates",
-    desc: "We will post changes and progress notes as they happen.",
+    title: "Public notes",
+    desc: "Changes and progress are shared plainly so you always know the current state.",
   },
   {
-    title: "No promises",
-    desc: "We will not ship until the basics feel solid.",
+    title: "Flexible dates",
+    desc: "We release when quality is ready.",
   },
 ];
 
@@ -57,10 +53,10 @@ export default function DownloadPage() {
           </div>
 
           <div className="pointer-events-none absolute left-[-2%] top-[12%] z-10 text-[clamp(4rem,15vw,9rem)] font-heading uppercase tracking-tighter text-white/5 select-none">
-            PRE-BETA
+            PRODUCTS
           </div>
           <div className="pointer-events-none absolute right-[-2%] bottom-[10%] z-10 text-[clamp(4rem,14vw,8rem)] font-heading uppercase tracking-tighter text-white/5 select-none">
-            AMETHYST
+            STUDIOS
           </div>
 
           <div className="relative z-20 mx-auto w-full max-w-6xl px-6 sm:px-12 lg:px-16 pt-24 pb-16">
@@ -73,16 +69,16 @@ export default function DownloadPage() {
 
                 <div className="space-y-6">
                   <h1 className="font-heading uppercase leading-[0.85] tracking-tight text-[#e9e7ff] text-[clamp(3rem,7vw,4rem)]">
-                    <span className="text-[#c4b5fd] border-b border-[#8b5cf6]/60">No public build.</span>
+                    <span className="text-[#c4b5fd] border-b border-[#8b5cf6]/60">Product status.</span>
                   </h1>
                   <p className="max-w-xl text-sm sm:text-base text-[#F4F6F8]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
-                    We are still building the client. If you want to follow along or request early access, Discord is where we post updates and testing applications.
+                    This page tracks what Amethyst Studios is building and what stage each product is in.
                   </p>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-6">
                   <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn brutal-shadow-hover bg-[#6d28d9] text-white px-10 py-4 text-sm font-bold tracking-widest uppercase">
-                    Join Discord
+                    Follow Updates
                   </ShimmerButton>
                 </div>
               </div>
@@ -96,21 +92,21 @@ export default function DownloadPage() {
               <div className="space-y-6 flex-1">
                 <div className="brutal-chip inline-flex items-center gap-4 px-3 py-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#c4b5fd]">
                   <span className="h-px w-10 bg-[#c4b5fd]/40" />
-                  Platforms
+                  Products
                 </div>
 
                 <h2 className="font-heading uppercase leading-[0.95] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,7vw,3.8rem)]">
-                  Planned support.
+                  Current status.
                 </h2>
               </div>
 
               <p className="flex-1 max-w-xl text-sm sm:text-base text-[#a29ada]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
-                These are the platforms we are aiming for. Links will appear here when public testing opens.
+                Early stage products are listed here with scope, status, and updates.
               </p>
             </div>
 
-            <div className="grid gap-5 lg:grid-cols-3">
-              {platforms.map((card) => (
+            <div className="grid gap-5 lg:grid-cols-2">
+              {products.map((card) => (
                 <div
                   key={card.title}
                   className="brutal-card brutal-shadow-hover group relative overflow-hidden p-6 transition-all duration-300"
@@ -131,7 +127,7 @@ export default function DownloadPage() {
                   </ul>
                   <div className="mt-10">
                     <ShimmerButton href="https://discord.gg/WAFac8MxMx" className="shimmer-btn brutal-shadow-hover bg-white/5 border border-white/10 text-white px-8 py-4 text-xs font-bold tracking-widest uppercase w-full">
-                      Get notified
+                      View updates
                     </ShimmerButton>
                   </div>
                   <div className="absolute bottom-0 right-0 h-2 w-16 bg-[#8b5cf6]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -151,12 +147,12 @@ export default function DownloadPage() {
                 </div>
 
                 <h2 className="font-heading uppercase leading-[0.95] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,7vw,3.8rem)]">
-                  We will keep it honest.
+                  How we ship.
                 </h2>
               </div>
 
               <p className="flex-1 max-w-xl text-sm sm:text-base text-[#a29ada]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
-                This page will only list real builds and real information and nothing else.
+                Clear updates, direct expectations, and release notes with no extra noise.
               </p>
             </div>
 
@@ -171,6 +167,7 @@ export default function DownloadPage() {
           </div>
         </section>
       </main>
+      <SiteFooter />
     </div>
   );
 }

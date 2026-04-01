@@ -50,45 +50,45 @@ export default function StickyScroll() {
     }, []);
 
     return (
-        <section ref={stickyRef} className="relative z-30" id="features">
+        <section ref={stickyRef} className="relative z-30" id="products">
             <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-16 pb-32 pt-20">
                 <div className="brutal-shell relative min-h-[80vh] p-6 sm:p-8 lg:p-10">
                     <div className="lg:absolute lg:left-10 lg:top-[22%] lg:max-w-xl space-y-6" data-scene>
                         <div className="brutal-chip inline-flex items-center gap-3 px-3 py-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#8b5cf6]">
                             <span className="h-px w-6 bg-[#8b5cf6]/40" />
-                            01 — Performance
+                            01 Product
                         </div>
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
-                            Stable Frames
+                            Amethyst Client
                         </h2>
                         <p className="max-w-md text-md text-[#a29ada]/90 leading-relaxed font-light">
-                            We changed how the game renders to make sure your frames stay consistent. No more stuttering during fights.
+                            A high performance Minecraft client focused on stable gameplay, lower resource use, and free access.
                         </p>
                     </div>
 
                     <div className="lg:absolute lg:left-10 lg:top-[22%] lg:max-w-xl space-y-6" data-scene>
                         <div className="brutal-chip inline-flex items-center gap-3 px-3 py-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#8b5cf6]">
                             <span className="h-px w-6 bg-[#8b5cf6]/40" />
-                            02 — Interface
+                            02 Product
                         </div>
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
-                            Simple HUD
+                            Amethyst Purge
                         </h2>
                         <p className="max-w-md text-md text-[#a29ada]/90 leading-relaxed font-light">
-                            A clean HUD that only shows what you need to see. Use your full screen for the game, not for menus.
+                            A PaperMC plugin with a 7 day purge event, team systems, custom structures, and special weapons.
                         </p>
                     </div>
 
                     <div className="lg:absolute lg:left-10 lg:top-[22%] lg:max-w-xl space-y-6" data-scene>
                         <div className="brutal-chip inline-flex items-center gap-3 px-3 py-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#8b5cf6]">
                             <span className="h-px w-6 bg-[#8b5cf6]/40" />
-                            03 — Updates
+                            03 Studio
                         </div>
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
-                            Weekly Fixes
+                            Build. Test. Improve.
                         </h2>
                         <p className="max-w-md text-md text-[#a29ada]/90 leading-relaxed font-light">
-                            Amethyst is always in dev. We release updates every week to add new features and fix any issues found by players.
+                            We build small first versions, test in real sessions, and keep the updates that actually help users.
                         </p>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ export default function StickyScroll() {
                             AMETHYST
                         </div>
                         <div className="text-[10rem] font-heading uppercase leading-none tracking-tighter text-transparent border-t border-white/25 pt-8" style={{ WebkitTextStroke: "1px rgba(196,181,253,0.5)" }}>
-                            CLIENT
+                            STUDIOS
                         </div>
                     </div>
                 </div>

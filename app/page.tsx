@@ -6,6 +6,7 @@ import FeatureGridSection from "@/components/FeatureGrid";
 import HorizontalScrollSection from "@/components/HorizontalScroll";
 import DownloadSection from "@/components/DownloadSection";
 import IntroReveal from "@/components/IntroReveal";
+import SiteFooter from "@/components/SiteFooter";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <HorizontalScrollSection />
         <DownloadSection />
       </main>
+      <SiteFooter />
     </div>
   );
 }

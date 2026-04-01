@@ -46,30 +46,30 @@ export default function HorizontalScroll() {
             <div className="overflow-hidden">
                 <div ref={horizontalTrackRef} className="flex min-w-[200vw] items-center gap-12 px-8 py-24">
                     <div className="brutal-shell min-w-[60vw] space-y-6 p-6 sm:p-8">
-                        <p className="brutal-chip inline-flex px-3 py-2 text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Efficiency</p>
+                        <p className="brutal-chip inline-flex px-3 py-2 text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Product</p>
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
-                            Reliably Stable
+                            Amethyst Client
                         </h2>
                         <p className="max-w-md text-sm text-[#a29ada]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
-                            We don&apos;t just increase frames; we make them stay steady. Play Minecraft without stutters or drops.
+                            A free Minecraft client focused on stable frame times, lower memory usage, and clean visuals.
                         </p>
                     </div>
                     <div className="brutal-shell min-w-[60vw] space-y-6 p-6 sm:p-8">
-                        <p className="brutal-chip inline-flex px-3 py-2 text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Design</p>
+                        <p className="brutal-chip inline-flex px-3 py-2 text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Product</p>
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#c4b5fd] text-[clamp(2.5rem,6vw,4rem)]">
-                            Simple Controls
+                            Amethyst Purge
                         </h2>
                         <p className="max-w-md text-sm text-[#a29ada]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
-                            Change your settings easily with an interface that stays hidden until you actually need it.
+                            A PaperMC plugin with a 7 day purge event, team systems, custom structures, and special weapons.
                         </p>
                     </div>
                     <div className="brutal-shell min-w-[60vw] space-y-6 p-6 sm:p-8">
-                        <p className="brutal-chip inline-flex px-3 py-2 text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Privacy</p>
+                        <p className="brutal-chip inline-flex px-3 py-2 text-xs uppercase tracking-[0.2em] text-[#a78bfa] font-medium">Studio</p>
                         <h2 className="font-heading uppercase leading-[0.9] tracking-tight text-[#e9e7ff] text-[clamp(2.5rem,6vw,4rem)]">
-                            Zero Tracking
+                            Practical Workflow
                         </h2>
                         <p className="max-w-md text-sm text-[#a29ada]/80 leading-relaxed font-light uppercase tracking-[0.03em]">
-                            We don&apos;t watch what you do. Amethyst is built to be private, with no background checks or forced updates.
+                            We ship small updates, test quickly, and keep the parts that improve real use cases.
                         </p>
                     </div>
                 </div>

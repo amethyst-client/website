@@ -4,14 +4,14 @@ import StaggeredMenu from "./StaggeredMenu";
 
 const menuItems = [
     { label: "Home", ariaLabel: "Go to home page", link: "/" },
-    { label: "Features", ariaLabel: "View features", link: "#features" },
-    { label: "Performance", ariaLabel: "Performance stats", link: "#performance" },
-    { label: "Download", ariaLabel: "Download Amethyst", link: "/download" },
+    { label: "Collections", ariaLabel: "View product collections", link: "/collections" },
+    { label: "Process", ariaLabel: "How we build", link: "/#process" },
+    { label: "Status", ariaLabel: "View product status", link: "/download" },
 ];
 
 const socialItems = [
     { label: "Discord", link: "https://discord.gg/WAFac8MxMx" },
-    { label: "GitHub", link: "https://github.com/amethyst-client" },
+    { label: "GitHub", link: "https://github.com/amethyst-studios" },
 ];
 
 export default function Header() {
